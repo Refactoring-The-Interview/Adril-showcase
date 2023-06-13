@@ -1,5 +1,9 @@
-import React from "react";
+import { NavBar } from "../NavBar/NavBar";
 
 export const App = () => {
-    return <div>hello</div>;
+    return (
+        <main>
+            <NavBar />
+        </main>
+    );
 };
