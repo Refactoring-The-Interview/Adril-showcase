@@ -1,13 +1,29 @@
-import React from "react";
+import React, { Component } from "react";
 import ReactDOM from "react-dom/client";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { App } from "./Components/App/App";
+import "./indexS.scss";
+
+interface Props {
+    path: string;
+    element: Component;
+    children: [];
+}
+
+const router: Props | any = createBrowserRouter([
+    {
+        path: "*",
+        element: <App />,
+        children: [],
+    },
+]);
 
 const root = ReactDOM.createRoot(
     document.getElementById("root") as HTMLElement
 );
 root.render(
     <React.StrictMode>
-        <App />
+        <RouterProvider router={router} />
     </React.StrictMode>
 );
 
