@@ -15,6 +15,14 @@ export const NavBar = () => {
                     <img src={AdrilLogo} className="AdrilLogo" alt="logo" />
                 </a>
             </Navbar.Brand>
+
+            <div className="dropdownContainer">
+                <div className="dropdown">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
         </Navbar>
     );
 };
