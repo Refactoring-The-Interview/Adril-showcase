@@ -1,7 +1,7 @@
 .NavBar.navbar {
     display: flex;
     justify-content: space-between;
-    background-color: #fff;
+    background-color: rgb(244, 231, 214);
     padding: 0 0;
     border: 1px solid black;
 
@@ -14,12 +14,34 @@
         width: 10rem;
         height: 10rem;
     }
+
     .dropdown {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         background-color: black;
-        color: white;
         width: 100%;
         height: 100%;
+        cursor: pointer;
+
+        &:hover {
+            transition: all 0.5s;
+            background-color: white;
+            border-left: 1px solid black;
+
+            & * {
+                background-color: black;
+            }
+        }
+    }
+
+    .bar1,
+    .bar2,
+    .bar3 {
+        width: 40px;
+        height: 2px;
+        background-color: #ffffff;
+        margin: 3px 0;
     }
 }
