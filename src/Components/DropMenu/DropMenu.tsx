@@ -4,15 +4,17 @@ import { MenuItem } from "./MenuItem/MenuItem";
 
 export const DropMenu = () => {
     return (
-        <div className="DropMenu">
+        <div className="fade-down DropMenu">
             {DummyDropDownData.map((item, idx) => {
                 const { title, subtitles, about } = item;
                 return (
-                    <MenuItem
-                        title={title}
-                        subtitles={subtitles}
-                        about={about}
-                    />
+                    <div className="fade-down">
+                        <MenuItem
+                            title={title}
+                            subtitles={subtitles}
+                            about={about}
+                        />
+                    </div>
                 );
             })}
         </div>

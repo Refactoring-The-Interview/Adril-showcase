@@ -1,3 +1,76 @@
 .MenuItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
     color: white;
+
+    .item-main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3rem 1.2rem;
+        font-size: 2rem;
+        font-weight: 200;
+    }
+
+    .item-title {
+        text-transform: capitalize;
+    }
+
+    .more {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 90%;
+        padding: 0rem 1.2rem;
+    }
+
+    .line {
+        display: flex;
+        align-self: center;
+        border-bottom: 0.1px solid grey;
+        width: 99%;
+    }
+    .plus {
+        width: 15px;
+        height: 15px;
+        background: linear-gradient(
+                to bottom,
+                transparent 40%,
+                #fffefe 40%,
+                #ffffff 60%,
+                transparent 60%
+            ),
+            linear-gradient(
+                to right,
+                transparent 40%,
+                #ffffff 40%,
+                #ffffff 60%,
+                transparent 60%
+            );
+        &:active {
+            background: linear-gradient(
+                to bottom,
+                transparent 40%,
+                #fffefe 40%,
+                #ffffff 60%,
+                transparent 60%
+            );
+        }
+    }
+
+    .fade-in {
+        animation: fadeIn 2s;
+        opacity: 1;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0%;
+        }
+        to {
+            opacity: 100%;
+        }
+    }
 }
