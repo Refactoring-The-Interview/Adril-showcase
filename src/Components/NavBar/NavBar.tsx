@@ -7,7 +7,6 @@ import "./NavBarS.scss";
 export const NavBar = () => {
     const navigate = useNavigate();
     const location = useLocation();
-    console.log(location);
     return (
         <Navbar className="NavBar">
             <Navbar.Brand>
