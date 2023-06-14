@@ -1,9 +1,20 @@
+import { DummyDropDownData } from "../../Apis/DummyDropDownData";
 import "./DropMenuS.scss";
+import { MenuItem } from "./MenuItem/MenuItem";
 
 export const DropMenu = () => {
     return (
         <div className="DropMenu">
-            <h1>Drop Menu</h1>
+            {DummyDropDownData.map((item, idx) => {
+                const { title, subtitles, about } = item;
+                return (
+                    <MenuItem
+                        title={title}
+                        subtitles={subtitles}
+                        about={about}
+                    />
+                );
+            })}
         </div>
     );
 };
