@@ -1,0 +1,10 @@
+.About {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid gray;
+
+    .about-text {
+        padding-bottom: 2rem;
+        font-size: 1.2rem;
+    }
+}

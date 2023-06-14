@@ -8,7 +8,7 @@ export const DummyDropDownData: DropMenuItemProps[] = [
     {
         title: "Force Protection",
         subtitles: [
-            "counter uas",
+            "counter UAS",
             "counter intrusion",
             "maritime counter intrusion",
         ],

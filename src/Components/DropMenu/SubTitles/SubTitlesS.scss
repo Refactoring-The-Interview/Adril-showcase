@@ -1,0 +1,13 @@
+.SubTitles {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 1rem 0;
+
+    .title {
+        padding: 1rem 0;
+        font-size: 1.5rem;
+        font-weight: 200;
+        text-transform: capitalize;
+    }
+}

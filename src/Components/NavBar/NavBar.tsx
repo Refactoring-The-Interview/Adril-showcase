@@ -1,7 +1,7 @@
 import { Navbar } from "react-bootstrap";
 import { useLocation, useNavigate } from "react-router-dom";
 import { Paths } from "../../Apis/types";
-import AdrilLogo from "../../Assets/Andril-Logo.png";
+import iconSprite from "../../Assets/Anduril-Logo.svg";
 import "./NavBarS.scss";
 
 export const NavBar = () => {
@@ -14,7 +14,7 @@ export const NavBar = () => {
                     className="LogoContainer"
                     href="https://www.anduril.com/careers/"
                 >
-                    <img src={AdrilLogo} className="AdrilLogo" alt="logo" />
+                    <img src={iconSprite} alt="logo"></img>
                 </a>
             </Navbar.Brand>
 
